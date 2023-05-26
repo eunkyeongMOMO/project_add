@@ -1,0 +1,265 @@
+$borderCcc: 1px solid #ccc;
+$greenTxt: #02ae6e;
+
+@mixin table-default{
+  font-size:15px;
+  padding:15px 0;
+  border-bottom: $borderCcc
+}
+@mixin ico-circle{
+  background: url('https://gscdn.hackers.co.kr/history/img/common/sp_ico.png') no-repeat;
+  margin-right:10px;
+  display:inline-block;
+}
+
+.content{
+  padding-bottom: 60px;
+  .inner{
+    width: 1050px;
+    margin: 0 auto;
+    position:relative;
+    .tabWrap{
+      width:100%;
+      display:flex;
+      li{
+        width:25%;
+        a{
+          text-align:center;
+          font-size:17px;
+          border:1px solid #ccc;
+          border-left:0;
+          color:#979797;
+          display:block;
+          height:45px;
+          line-height:43px;
+          background:#fff;
+          &:hover{
+            text-decoration:underline;
+          }
+        }
+        &:first-of-type{
+          a{
+            border-left:1px solid #ccc;
+          }
+        }
+        &.on{
+          a{
+            color: #FFF;
+            background: #2d2d2d;
+            border-color: #2d2d2d;
+          }
+        }
+      }
+    }
+    .scrollFixed{
+      position:sticky;
+      top:0;
+      left:50%;
+      transform:tranlateX(-50%);
+      width:1050px;
+      z-index: 1;
+    }
+    .title{
+      font-size: 24px;
+      letter-spacing: -1px;
+      color: #000;
+      margin:50px 19px 25px 0;
+    }
+    .banner{
+      margin-bottom: 55px;
+    }
+    .subTitle{
+      font-size: 20px;
+      position:relative;
+      padding-left:13px;
+      margin:50px 10px 10px 0;
+      color:#000;
+      display: inline-block;
+      &::before{
+        display: inline-block;
+        content: '';
+        position: absolute;
+        top: 6px;
+        left: 0;
+        width: 3px;
+        height: 18px;
+        background: #000;
+      }
+    }
+    .tableWrap{
+      margin:30px auto;
+      table{
+        border-top:1px solid #000;
+        th{
+          background:#f8f8f8;
+          color:#010101;
+          @include table-default;
+          &.rightBorder{
+            border-right: $borderCcc;
+          }
+        }
+        td{
+          color:#333;
+          text-align:center;
+          font-size:15px;
+          letter-spacing: -.5px;
+          @include table-default;
+          &.firstCell{
+            border-right: $borderCcc;
+            font-weight:bold;
+          }
+          &.green{
+            color:$greenTxt;
+          }
+          &.rightBorder{
+            border-right: $borderCcc;
+          }
+          &.tl{
+            text-align:left;
+            padding:15px;
+          }
+        }
+      }
+    }
+    .infoBox{
+      font-size: 15px;
+      color: #000;
+      background: #f0f9f7;
+      border: none;
+      padding: 30px 200px 30px 35px;
+      span{
+        color: #a3a3a3;
+      }
+      em{
+        display: inline-block;
+        width: 48px;
+        text-align: center;
+        color: #fa4b4b;
+        border: 1px solid #fa4b4b;
+        border-radius: 15px;
+        vertical-align: top;
+      }
+      ul{
+        margin-left: 8px;
+        li::before{
+          content: '';
+          display: inline-block;
+          width: 4px;
+          height: 4px;
+          margin-right: 6px;
+          background: #a3a3a3;
+          vertical-align: middle;
+        }
+      }
+    }
+    .subTxt{
+      margin-top: 12px;
+      font-size: 14px;
+      color: #c3c3c3;
+    }
+    .titGreen{
+      font-size: 16px;
+      color: $greenTxt;
+    }
+    .moviePopup{
+      position:fixed;
+      top:0;
+      left:0;
+      z-index:5;
+      width:100%;
+      height:100%;
+      .bg{
+        position:fixed;
+        top:0;
+        left:0;
+        z-index:5;
+        width:100%;
+        height:100%;
+        background:#000000b3;
+      }
+      .inner{
+        width:960px;
+        height:540px;
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        z-index:6;
+      }
+    }
+    .popUpBtn{
+      display:block;
+    }
+    .nTxt{
+      font-size:16px;
+      letter-spacing: -1px;
+      .green{
+        color:$greenTxt;
+      }
+    }
+    .faqWrap{
+      border-top: 1px solid #000;
+      font-size: 15px;
+      ul li{
+        border-bottom:$borderCcc;
+        .qnaItem{
+          div{
+           display:flex;
+           vertical-align: middle;
+
+           .icoQ{
+            @include ico-circle;
+            width: 28px;
+            height: 25px;
+            background-position: -19px -24px;
+           }
+           .icoA{
+            @include ico-circle;
+            width: 28px;
+            height: 25px;
+            background-position: -48px -24px;
+           }
+           .emphasis{
+             color: $greenTxt;
+           }
+           .icoArrow{
+             @include ico-circle;
+             width: 16px;
+             height: 19px;
+             background-position: -52px -53px;
+             transform: rotate(90deg);
+           }
+           .icoArrowOn{
+             @include ico-circle;
+             width: 16px;
+             height: 19px;
+             background-position: -52px -51px;
+             transform: rotate(-90deg);
+           }
+           p{
+             width:85%;
+             margin-right:8%;
+             text-align:left;
+           }
+         }
+         .qnaButton{
+           cursor:pointer;
+           padding:20px 20px;
+         }
+         .showAnswer{
+           padding:20px 20px;
+           border-top:1px dashed #ccc;
+           p{
+             width:98%;
+             margin-right:0;
+           }
+         }
+         .hideAnswer{
+           height:0;
+           overflow:hidden;
+         }
+        }
+      }
+    }
+  }
+}

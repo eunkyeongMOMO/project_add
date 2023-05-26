@@ -1,0 +1,445 @@
+// layout
+.inner {
+  margin: 0 auto;
+  width: 1050px;
+}
+
+// 우측상단 navi
+.topNavi {
+  box-sizing: border-box;
+  padding: 20px 0;
+  ul {
+    float: right;
+
+    li {
+      float: left;
+      font-size: 14px;
+    }
+    li::after {
+      content: ">";
+      display: inline-block;
+      padding: 0 10px;
+    }
+    li:nth-last-child(1):after {
+      display: none;
+    }
+  }
+}
+.topNavi::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+// 배너
+.slickDot {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex !important;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 93.5%;
+  height: 50px;
+  li {
+    position: relative;
+    width: 25%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.3);
+  }
+  li::after {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    content: "";
+    width: 2px;
+    height: 20px;
+    background-color: #fff;
+    box-sizing: border-box;
+  }
+
+  li:nth-child(4n)::after {
+    display: none;
+  }
+  li:hover::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #0069a6;
+  }
+
+  button {
+    width: 100% !important;
+    height: 100%;
+    color: #fff;
+  }
+}
+
+.nextArrow {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 35px;
+  height: 50px;
+  background-image: url("https://gscdn.hackers.co.kr/ecpa/img/common/sp_btn.png");
+  background-position: -220px -25px !important;
+}
+
+.prevArrow {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  width: 35px;
+  height: 50px;
+  background-image: url("https://gscdn.hackers.co.kr/ecpa/img/common/sp_btn.png");
+  background-position: -183px -25px !important;
+}
+
+// 비디오슬라이드
+.videoTitle {
+  font-size: 1.2rem;
+  color: #2fa753;
+  margin-bottom: 12px;
+}
+.videoSubTitle {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  span {
+    margin-left: 10px;
+    font-size: 1rem;
+    color: #727272;
+  }
+}
+.videoBtn {
+  position: relative;
+}
+.videoBtn::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 32px;
+  height: 38px;
+  background: url("https://gscdn.hackers.co.kr/history/img/common/sp_btn.png")
+    no-repeat -91px -92px;
+}
+.videoDot {
+  position: absolute;
+  top: -28px;
+  right: 0;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+  li {
+    width: 10px;
+    height: 10px;
+    background-color: #d3d3d3;
+    border-radius: 5px;
+    position: relative;
+    button {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      font-size: 0;
+    }
+  }
+}
+
+//무료 컨텐츠
+.cont01 {
+  h2 {
+    font-size: 24px;
+    padding-bottom: 20px;
+  }
+}
+.cont03 {
+  position: relative;
+  .videoSelect {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    select {
+      height: 30px;
+      border: 1px solid #bbb;
+    }
+  }
+}
+
+// 탭영역
+.tab01 {
+  width: 100%;
+  padding-bottom: 50px;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+
+    li {
+      position: relative;
+      width: 25%;
+      border-bottom: 1px solid #cccccc;
+      border-right: 1px solid #cccccc;
+      box-sizing: border-box;
+
+      a {
+        position: relative;
+        display: block;
+        text-align: center;
+        width: 100%;
+        line-height: 56px;
+        height: 56px;
+        font-size: 1rem;
+      }
+
+      a.on {
+        font-weight: bold;
+        color: #2fa753;
+      }
+
+      a.on:before {
+        content: "";
+        position: absolute;
+        top: -1px;
+        left: -1px;
+        right: -1px;
+        bottom: -1px;
+        border: 1px solid #2fa753;
+      }
+    }
+  }
+}
+
+// 컨텐츠 타이틀
+.contTitle {
+  position: relative;
+  font-size: 20px;
+  padding-left: 13px;
+  letter-spacing: -1px;
+  line-height: 2;
+  margin-bottom: 30px;
+  span {
+    margin-left: 12px;
+    font-size: 15px;
+    color: #727272;
+    font-weight: normal;
+    vertical-align: text-top;
+  }
+}
+.contTitle::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 18px;
+  background-color: #333;
+}
+
+// 무료강의 TOP05
+.videoTop05List {
+  padding-bottom: 50px;
+  ul {
+    li {
+      position: relative;
+      float: left;
+      width: 250px;
+      height: 140px;
+      margin: 0 0 12px 15px;
+      overflow: hidden;
+      button,
+      button img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    li:first-child {
+      width: 520px;
+      height: 293px;
+      margin: 0;
+      .videoNotice {
+        font-size: 1.2rem;
+      }
+    }
+    .videoNotice {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 30%;
+      background-color: rgba($color: #000000, $alpha: 0.4);
+      color: #fff;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+// 과목별 무료강의
+.videoClassList {
+  ul {
+    li {
+      margin: 0 0 12px 15px;
+      overflow: hidden;
+      img {
+        width: 250px;
+        height: 140px;
+      }
+    }
+  }
+}
+
+// 팝업영상
+.moviePopup {
+  position: fixed;
+  z-index: 99;
+  .bg {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    background-color: #000;
+  }
+  .inner {
+    position: fixed;
+    top: 20%;
+    left: 0;
+    right: 0;
+    width: 50%;
+    height: 57%;
+  }
+}
+
+// 게시판
+.boardWrap {
+  padding: 50px 0;
+  table {
+    border-top: 1px solid #333;
+  }
+  .notice {
+    td {
+      font-weight: bold;
+    }
+  }
+  tr {
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    th {
+      background: #f8f8f8;
+      box-sizing: border-box;
+      padding: 16px 0;
+    }
+
+    td {
+      padding: 16px 0;
+      a {
+        padding-left: 30px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .icon {
+    background: url("https://gscdn.hackers.co.kr/history/img/common/sp_ico.png")
+      no-repeat;
+    display: inline-block;
+    width: 23px;
+    height: 19px;
+    font-size: 0;
+    vertical-align: middle;
+  }
+  .speak {
+    background-position: 0 -71px;
+  }
+  .file {
+    width: 18px;
+    height: 20px;
+    background-position: -153px 0;
+  }
+  .new {
+    width: 16px;
+    height: 16px;
+    background-position: -175px 0;
+  }
+}
+
+.boardSelect {
+  float: right;
+  select {
+    display: inline-block;
+    width: 147px;
+    margin-right: 10px;
+    vertical-align: middle;
+    padding: 0 5px;
+    height: 32px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #010101;
+  }
+  input {
+    vertical-align: middle;
+    width: 170px;
+    height: 32px;
+    font-size: 15px;
+    padding: 0 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    line-height: 30px;
+  }
+  button {
+    display: inline-block;
+    margin-left: 10px;
+    width: 72px;
+    height: 32px;
+    border-radius: 3px;
+    background: #222;
+    color: #fff;
+    line-height: 32px;
+    text-align: center;
+    font-size: 15px;
+    vertical-align: middle;
+  }
+}
+.boarPaging {
+  text-align: center;
+  a {
+    display: inline-block;
+    padding: 0 7px;
+    font-weight: normal;
+    vertical-align: middle;
+    font-size: 14px;
+  }
+  a.on {
+    background: #2fa753;
+    color: #fff;
+  }
+}
+
+.bottomBnr {
+  margin: 30px 0;
+}

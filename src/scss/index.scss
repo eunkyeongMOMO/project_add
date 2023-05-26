@@ -1,0 +1,138 @@
+@import 'Lecture.module';
+
+
+.inner-box{
+	width:1050px;margin:0 auto;
+	&.no-sub-navi{
+		padding-top:53px;
+	}
+}
+
+.sub-navi{
+	overflow:hidden;text-align:right;margin:21px 0 32px;
+	li{
+		display:inline-block;position:relative;padding-left:17px;color:#9A9A9A;font-size:14px;
+		&:after{
+			display:inline-block;
+			content:">";
+			position:absolute;
+			left:5px;
+			top:1px;
+			font-family:'dotum';
+			font-size:13px;
+		}
+		&:first-child{
+			padding-left:0;
+			&:after{content:""}
+		}
+	}
+}
+
+.title-wrap{
+	overflow:hidden;margin-bottom:26px;
+	&.v2{
+		margin-bottom:20px;padding-bottom:14px;border-bottom:1px solid #000;
+	}
+}
+
+$point-color: #2fa753;
+
+.btn-xsmall, .btn-small, .btn-medium, .btn-large {
+  display: inline-block;
+  border-radius: 3px;
+  text-align: center;
+  background: $point-color;
+  border: 1px solid $point-color;
+  color: #fff;
+  letter-spacing: -1px;
+}
+
+[class^='btn-']{
+	&.v2{
+		border-color:$point-color;color:$point-color;background:#fff
+	}
+	&.v3{
+		border-color:#000;background-color:#000;color:#fff;
+	}
+	&.v4{
+		border-color:#000;color:#000;background:#fff;
+	}
+	&.v5{
+		border-color:#d90738;color:#d90738;background:#fff;
+	}
+	&.v6{
+		border-color:$point-color;color:#ffffff;background:$point-color;
+	}
+	&.v7{
+		border-color:#737373;color:#737373;background:#fff;
+	}
+}
+
+
+.ico-com{
+	display:inline-block;width:20px;height:20px;
+  background-image: url("https://gscdn.hackers.co.kr/ecpa/img/common/sp_ico.png");
+	&.point{
+		width:19px;height:15px;background-position-x:-25px;
+	}
+	&.point2{
+		width:17px;height:17px;background-position-x:-50px;
+	}
+	&.mobile{
+		width:11px;height:15px;background-position-x:-75px;
+	}
+	&.pc{
+		width:15px;height:12px;background-position-x:-100px;
+	}
+	&.movie{
+		width:22px;height:22px;background-position-x:-125px;
+	}
+	&.new{
+		width:16px;height:16px;background-position-x:-175px;
+	}
+	&.file{
+		width:18px;height:20px;background-position-x:-153px;
+	}
+	&.lock{
+		width:15px;height:15px;background-position-y:-24px;
+	}
+	&.lock2{
+		width:15px;height:15px;background-position:-155px -25px;
+	}
+	&.question{
+		width:25px;height:25px;background-position:-19px -24px;
+	}
+	&.answer{
+		width:25px;height:25px;background-position:-48px -24px;
+	}
+	&.file-close{
+		width:17px;height:17px;background-position:-77px -25px
+	}
+	&.calendar{
+		width:14px;height:14px;background-position:0 -53px;
+	}
+	&.calendar2{
+		width:21px;height:19px;background-position:-175px -25px;cursor:pointer;
+	}
+	&.alert-info {
+		width: 18px;height: 16px; background-position: -98px -25px;
+	}
+	&.time{
+		width:15px;height:16px;background-position:-18px -53px
+	}
+	&.people{
+		width:14px;height:14px;background-position:-37px -53px
+	}
+	&.question2{
+		width:21px;height:21px;background-position:-69px -49px;
+	}
+	&.expansion {
+		width:20px;height:20px;background-position:-139px -50px;
+	}
+	&.infomation{
+		width:21px;height:21px;background-position:-141px -49px;
+	}
+	&.speak{
+		width:23px;height:19px;background-position:-163px -49px;
+	}
+}

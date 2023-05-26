@@ -1,0 +1,89 @@
+/* 퀵메뉴 */
+.quickMenu{
+	width:124px;
+	position:fixed;
+	left:50%;
+	margin-left:560px;
+	z-index:2;
+	.bxslider-default{
+		color:#FFF;
+		font-size:15px;
+		text-align:center;
+		background:#2D2D2D;
+		border:1px solid #2D2D2D;
+		padding-top:25px;
+		em{
+			font-size:32px;
+			font-weight:bold;
+			display:block;
+			line-height:28px;
+		}
+	}
+	.quickTit{
+		height:48px;
+		line-height:48px;
+		color:#FFF;
+		font-size:15px;
+		text-align:center;
+		background:#4b4b4b;
+		border:1px solid #2D2D2D;
+	}
+	.quickList{
+		border:1px solid #D7D7D7;
+		border-top:none;
+		box-sizing:border-box;
+		background:#fff;
+		> li{
+			border-top:1px solid #D7D7D7;
+			position:relative;
+			a, button{
+				display:block;
+				width: 100%;
+				padding:10px;
+				color:#363636;
+				letter-spacing: -1px;
+			}
+			button{
+				text-align:center;
+				background:#F4F4F4;
+				color:#9A9A9A;
+				.quickIcoArrow{
+					position:absolute;
+					right:10px;
+					top:15px;
+				}
+			}
+		}
+	}
+	.quick-banner-list{
+		margin-top:15px;
+		li{
+			height:120px;
+			&:first-child{
+				margin-top:0;
+			}
+			margin-top:15px;
+		}
+	}
+}
+// [class^="quick-ico"]{
+// 	display:inline-block;width:20px;height:20px;
+// 	@include background($img-common, 0 ,0)
+// }
+.quick-ico{
+	&-arrow{
+		width:6px;height:7px;vertical-align:middle;background-position:-57px -28px;
+	}
+	&-top{
+		background-position:-68px -27px;width:7px;height:4px;vertical-align:middle;
+	}
+	&-btm{
+		background-position:-68px -32px;width:7px;height:4px;vertical-align:middle;
+	}
+	&-unlock{
+		background-position:-95px -27px;width:13px;height:14px;vertical-align:middle;
+	}
+	&-lock{
+		background-position:-80px -27px;width:11px;height:14px;vertical-align:middle;
+	}
+}

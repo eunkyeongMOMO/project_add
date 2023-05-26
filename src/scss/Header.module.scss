@@ -1,0 +1,181 @@
+.headerIn {
+	width:100%;
+	border-top:1px solid #e5e5e5;
+	border-bottom:1px solid #e5e5e5;
+	background:#f8f8f8;
+  font-size: 13px;
+	.hdTop {
+		width:1050px;
+		margin:0 auto;
+		&::after {
+			content:'';
+			display:block;
+			clear:both;
+		}
+		>ul{
+			>li{
+				float:left;
+			}
+			&.topLink{
+				float:left;
+				>li{
+					border-left:1px solid #e5e5e5;
+					a{
+						display:block;
+						padding:8px 17px;
+						color:#a6a6a6;
+					}
+				}
+			}
+			&.topSvc{
+				float:right;
+				li{
+					padding:8px 0 8px 20px;
+					background:url(https://pimg.hackers.com/land/layout/header/top_svc_line.gif) no-repeat 10px 50%;
+					position:relative;
+					&:first-child{
+						background:none;
+						padding-left:0;
+						a{
+							color:#333;
+						}
+					}
+					a{
+						color:#666;
+						font-family:'noto', sans-serif;
+					}
+					&.loginBox {
+						position:relative;
+						padding:1px 0 2px;
+						>a{
+							position:relative;
+							line-height:32px;
+							&:after{
+								display:inline-block;
+								margin-left:1px;
+								content:'▼';
+								font-size:10px;
+								vertical-align:top;
+							}
+						}
+						ul{
+							display:none;
+							position:absolute;
+							top:35px;
+							left:-9px;
+							width:80px;
+							text-align:center;
+							background:#fff;
+							border:1px solid #e5e5e5;
+							z-index:310;
+							box-sizing: content-box;
+							padding:10px 0;
+							li{
+								padding:0;
+								background:none;
+								a{
+									display:block;
+									padding:3px 0;
+									text-align:center;
+									font-weight:normal;
+									&:hover{
+										color:$pointColor;
+									}
+								}
+							}
+						}
+
+						&:hover{
+							> a{
+								font-weight:600;
+								&:after{
+									content:'▲';
+								}
+							}
+							ul{
+								display:block;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+.headerBox{
+	width:1050px;
+	margin:0 auto;
+	position:relative;
+	text-align:center;
+	height:103px;
+
+	h1{
+		position:absolute;
+		top:40px;
+		left:50%;
+		@include pos-horizontal;
+		button{
+      display:block; 
+      img{
+        width: 165px;
+        height: auto;
+      }
+    }
+	}
+}
+
+
+.gnb {
+  z-index: 1;
+  position: relative;
+  height: 53px;
+  background: #fafafa;
+  border-top: 1px solid #d7d7d7;
+  border-bottom: 1px solid #d7d7d7;
+  > ul {
+    position: relative;
+    overflow: hidden;
+    width: 1050px;
+    margin: 0 auto;
+    z-index: 0;
+    > li {
+      float: left;
+      > a {
+        width: 131px;
+        height: 52px;
+        font-weight: 600;
+        color: #000;
+        letter-spacing: -1px;
+        line-height: 51px;
+        text-align: center;
+        font-size: 16px;
+        display: block;
+      }
+    }
+  }
+}
+.subMenu {
+  display: none;
+  padding-top: 5px;
+  margin-top: -2px;
+  text-align: center;
+  border: 1px solid #d7d7d7;
+  border-top: 0;
+  background: #fff;
+  li {
+    margin-bottom: 10px;
+    a {
+      color: #7c7c7c;
+      font-size: 13px;
+      &:hover {
+        color: $pointColor;
+      }
+    }
+  }
+}
+.gnb > ul > li:hover .subMenu {
+  display: block;
+}

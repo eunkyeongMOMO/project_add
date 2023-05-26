@@ -1,0 +1,50 @@
+// teacher banner
+
+.teacherBanner{
+  position: relative;
+
+  .slick-dots{
+    $_length: 4;
+
+    position: absolute;
+    bottom: 5px;
+    left: 35px;
+    width: calc(100% - 70px);
+    height: 50px;
+    background-color: rgba(0,0,0,0.4);
+
+    li{
+      display: inline-block;
+      width: calc(100% / $_length);
+      height: 100%;
+      margin: 0;
+
+      button{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        font-size: 16px;
+        letter-spacing: -1px;
+
+        &::before{
+          display: none;
+        }
+      }
+      &::before{
+        display: block;
+        content: "";
+        position:absolute;
+        top: 25%;
+        left: 0;
+        width: 1px;
+        height: 50%;
+        background-color: #fff;
+      }
+      &:first-child::before{
+        display: none;
+      }
+
+    }
+  }
+}

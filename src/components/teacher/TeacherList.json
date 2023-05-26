@@ -1,0 +1,93 @@
+[
+  {
+    "idx": 1,
+    "type": "심화(1-3급)",
+    "teacherName": "김승범",
+    "lectureType": "심화기출",
+    "lectureDetail": "한능검 만점의 상위1% 비법 공개",
+    "teacherDetail": "38회 ~ 57회 한능검 심화 응시기준(44,46회 미응시/50,54회 제외)",
+    "linkDeatil": "https://history.hackers.com/?r=history&c=teacher&front=teacher_detail&tc_id=3978887&tci_id=82",
+    "linkBest": "https://history.hackers.com/?r=history&c=lecture/detail&productIdx=6290",
+    "teacherImg": "https://history.hackers.com/files/history/teacher/intro/3978887/beab0521a88802fef46b4e1ae22a0471.png",
+    "teacherDetailMainImg": "https://history.hackers.com/files/history/teacher/intro/3978887/5407f386499d9f45ffcf123213bda8bf.png",
+    "teacherDetailSubText": "최신기출경향 분석으로 쉽고 빠르게!",
+    "teacherDetailText": "한능검 상위1% 비법으로 단기합격!",
+    "teacherDetailVideo": "https://cdndown.hackers.com/hackers/mp4/public/sample/16181_1.mp4",
+    "teacherDetailProfile": "(현) 해커스자격증 한국사능력검정 대표교수\n(현) 해커스공무원 한국사 학원 전임 교수\n(전) 해커스 독학사 한국사 담당 교수\n(전) 을지대학교 공무원 한국사 출강\n(전) 위즈 고시학원 한국사 교수",
+    "teacherDetailMiniImg": "https://history.hackers.com/files/history/teacher/intro/3978887/137cd6709e885746723c5b92e2081bb1.png",
+    "teacherDetailIntroduceVideo": "https://youtube.com/embed/l4QgmVZfo64?autoplay=0",
+    "teacherDetailIntroduceBg": "https://history.hackers.com/files/history/teacher/intro/3978887/df35533d8a596887ec26cadb36b03967.png"
+  },
+  {
+    "idx": 2,
+    "type": "심화(1-3급)",
+    "teacherName": "안지영",
+    "lectureType": "심화이론",
+    "lectureDetail": "듣기만 해도 외워지는 자동한국사",
+    "teacherDetail": "해커스한국사 대표 스타강사",
+    "linkDeatil": "https://history.hackers.com/?r=history&c=teacher&front=teacher_detail&tc_id=7632798&tci_id=263",
+    "linkBest": "https://history.hackers.com/?r=history&c=lecture/detail&productIdx=5358",
+    "teacherImg": "https://history.hackers.com/files/history/teacher/intro/7632798/6322db8f0ebefce2830840d84397ac2c.png",
+    "teacherDetailMainImg": "https://gscdn.hackers.co.kr/frontend/history/teacher/intro/7632798/33b7a7ae89b196e60cabfb0276867495.png",
+    "teacherDetailSubText": "핵심키워드로 빠르게 합격!",
+    "teacherDetailText": "듣기만 해도 외워지는 자동암기한국사",
+    "teacherDetailVideo": "https://cdndown.hackers.com/hackers/mp4/hackersjob/koreanhistory/ajy/1641/1641_0_es.mp4",
+    "teacherDetailProfile": "(현)해커스한국사 선생님\n성신여자대학교 사학과/국어국문학과 졸업\n서강대학교 교육대학원 역사교육전공 석사수료\n히스토리안 대표\n용산역사박물관 교육강사\n전곡선사박물관 교육강사\nJTBC웹예능 인천개항장 투어 출연\nKBS굿모닝대한민국라이브 3.1절특집 출연\n서울시미래유산투어 운영용역 총괄\n서울G밸리산업박물관 지역투어 개발용역 총괄",
+    "teacherDetailMiniImg": "https://history.hackers.com/files/history/teacher/intro/7632798/584ba56e16cc722581c87133075769b7.png",
+    "teacherDetailIntroduceVideo": "https://cdndown.hackers.com/hackers/mp4/hackersjob/koreanhistory/ajy/1641/1641_0_es.mp4?rel=0&enablejsapi=1&autoplay=1&wmode=transparent",
+    "teacherDetailIntroduceBg": "https://history.hackers.com/files/history/teacher/intro/7632798/8554b7f6a3acf6406953ea225b945fd7.png"
+  },
+  {
+    "idx": 3,
+    "type": "심화(1-3급)",
+    "teacherName": "이명호",
+    "lectureType": "심화이론",
+    "lectureDetail": "스토리텔링의 압축한국사",
+    "teacherDetail": "해커스한국사 대표 스타강사",
+    "linkDeatil": "https://history.hackers.com/?r=history&c=teacher&front=teacher_detail&tc_id=6273506&tci_id=246",
+    "linkBest": "https://history.hackers.com/?r=history&c=lecture/detail&productIdx=5446",
+    "teacherImg": "https://history.hackers.com/files/history/teacher/intro/6273506/0986817757fe94e655eb15b15878a43a.png"
+  },
+  {
+    "idx": 4,
+    "type": "심화(1-3급)",
+    "teacherName": "연미정",
+    "lectureType": "심화이론",
+    "lectureDetail": "역사전문가의 강목(綱目)교수법",
+    "teacherDetail": "해커스한국사 대표 스타강사",
+    "linkDeatil": "https://history.hackers.com/?r=history&c=teacher&front=teacher_detail&tc_id=4549593&tci_id=83",
+    "linkBest": "https://history.hackers.com/?r=history&c=lecture/detail&productIdx=3373",
+    "teacherImg": "https://history.hackers.com/files/history/teacher/intro/4549593/bfbce34fea77efd16362996b59ff1dea.png"
+  },
+  {
+    "idx": 5,
+    "type": "공무원 한국사",
+    "teacherName": "이중석",
+    "lectureType": "한국사",
+    "lectureDetail": "해커스공무원 한국사 1위",
+    "teacherDetail": "해커스공무원 한국사 온라인 단과 강좌 순 매출액 기준 (19.01.01-19.12.31)",
+    "linkDeatil": "https://gosi.hackers.com/html/professor/?user_num=67&_gl=1*1dc23oo*_ga*MTMxNjMxNjI2NS4xNjgyNDA2NTgw*_ga_EPVJH3DR86*MTY4MjQwNjU4MC4xLjEuMTY4MjQwNjU5MC41MC4wLjA.#/",
+    "linkBest": "https://egosi.hackers.com/site/?c=lec_detail&lec_no=9482&_gl=1*1nd4b1u*_ga*MTMxNjMxNjI2NS4xNjgyNDA2NTgw*_ga_EPVJH3DR86*MTY4MjQwNjU4MC4xLjEuMTY4MjQwNjU5MC41MC4wLjA.",
+    "teacherImg": "https://gscdn.hackers.co.kr/pass/img/teacher_info/teacher-ljs.png"
+  },
+  {
+    "idx": 6,
+    "type": "공무원 한국사",
+    "teacherName": "윤승규",
+    "lectureType": "한국사",
+    "lectureDetail": "적중으로 증명하는 대한국사",
+    "linkDeatil": "https://gosi.hackers.com/html/professor/?user_num=203&_gl=1*hxf0eu*_ga*MTMxNjMxNjI2NS4xNjgyNDA2NTgw*_ga_EPVJH3DR86*MTY4MjQwNjU4MC4xLjEuMTY4MjQwNjU5MC41MC4wLjA.#/",
+    "linkBest": "https://egosi.hackers.com/site/?c=lec_detail&lec_no=9372&_gl=1*hxf0eu*_ga*MTMxNjMxNjI2NS4xNjgyNDA2NTgw*_ga_EPVJH3DR86*MTY4MjQwNjU4MC4xLjEuMTY4MjQwNjU5MC41MC4wLjA.",
+    "teacherImg": "https://gscdn.hackers.co.kr/pass/img/teacher_info/teacher-ysk.png"
+  },
+  {
+    "idx": 7,
+    "type": "공무원 한국사",
+    "teacherName": "이명호",
+    "lectureType": "한국사",
+    "lectureDetail": "만점으로 이끄는 전략적인 강의",
+    "linkDeatil": "https://gosi.hackers.com/html/professor/?user_num=311&_gl=1*11zkwo2*_ga*MTMxNjMxNjI2NS4xNjgyNDA2NTgw*_ga_EPVJH3DR86*MTY4MjQwNjU4MC4xLjEuMTY4MjQwNjU5MC41MC4wLjA.#/",
+    "linkBest": "https://egosi.hackers.com/site/?c=lec_detail&lec_no=9560&_gl=1*11zkwo2*_ga*MTMxNjMxNjI2NS4xNjgyNDA2NTgw*_ga_EPVJH3DR86*MTY4MjQwNjU4MC4xLjEuMTY4MjQwNjU5MC41MC4wLjA.",
+    "teacherImg": "https://gscdn.hackers.co.kr/pass/img/teacher_info/teacher-lmh.png"
+  }
+]

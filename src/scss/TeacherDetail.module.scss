@@ -1,0 +1,308 @@
+.teacherDetailInner {
+  width: 1050px;
+  height: auto;
+  margin: auto;
+}
+.teacherDetailWrap {
+  min-height: 750px;
+  padding: 30px 0;
+  padding-bottom: 50px;
+  background-size: auto 750px !important;
+
+  * {
+    box-sizing: border-box;
+    color: #010101;
+  }
+}
+
+.teacherInfoArea {
+  width: 100%;
+  .detailSubTitle {
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 2px solid #010101;
+    padding-bottom: 5px;
+  }
+
+  .teacherTitle {
+    font-size: 43px;
+    margin-top: 20px;
+    font-weight: 600;
+    letter-spacing: -1px;
+
+    span {
+      font-size: 28px;
+      font-weight: 400;
+    }
+
+    .teacherclass {
+      position: relative;
+      font-size: 28px;
+      margin-right: 20px;
+      font-weight: 600;
+
+      &::after {
+        display: block;
+        content: "";
+        position: absolute;
+        top: 15%;
+        right: -10px;
+        width: 2px;
+        height: 80%;
+        background-color: #010101;
+      }
+    }
+  }
+}
+
+// 상단 선생님 정보 탭
+.teacherInfoTab {
+  width: 520px;
+  margin-top: 80px;
+
+  // tab button
+  .teacherTab {
+    display: flex;
+    justify-content: space-between;
+    li {
+      width: 50%;
+      button {
+        width: 100%;
+        color: #979797;
+        border: 1px solid #979797;
+        padding: 10px;
+        &.on,
+        &:hover {
+          background-color: #2fa753;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  // tab content
+  .tabcon {
+    display: none;
+    width: 100%;
+    height: 295px;
+    border: 1px solid #979797;
+    border-top: none;
+    &.on {
+      display: block;
+    }
+    .teacherProfile {
+      width: 100%;
+      height: 100%;
+      padding: 30px;
+      color: #010101;
+      font-size: 14px;
+    }
+  }
+}
+
+// teacher nav
+$navHeight: 70px;
+@mixin navFlex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+
+.teacherNav {
+  width: 100%;
+  height: $navHeight;
+  background-color: #3c3c3c;
+
+  &.fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+
+  .teacherNavInner {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .navLeftArea {
+    @include navFlex;
+    height: 100%;
+
+    button {
+      display: inline-block;
+      position: relative;
+      width: 28px;
+      height: 25px;
+      border-top: 2px solid #fff;
+      border-bottom: 2px solid #fff;
+      font-size: 0;
+      vertical-align: middle;
+
+      &::after {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        display: block;
+        content: "";
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+      }
+    }
+
+    .teacherSmallImg {
+      width: 42px;
+      height: 42px;
+    }
+    .teacherName {
+      color: #fff;
+      font-size: 18px;
+    }
+  }
+
+  .navRightArea {
+    @include navFlex;
+    li {
+      color: #979797;
+      button {
+        color: #979797;
+        font-size: 16px;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.navTab {
+  position: relative;
+  z-index: 1;
+  display: none;
+  width: 100%;
+  height: auto;
+  background-color: #606060;
+  &.on {
+    display: block;
+  }
+  .teacherDetailInner {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navTabBtn {
+    width: 30%;
+    height: 200px;
+    background-color: #565656;
+    padding: 20px;
+    li {
+      margin-bottom: 10px;
+    }
+    button {
+      font-size: 18px;
+      color: #b7b7b7;
+      font-weight: 600;
+      &.on {
+        color: #2fa753;
+      }
+    }
+  }
+  .tabcon {
+    width: 70%;
+    height: 200px;
+    padding: 30px;
+
+    .teacherMenuTab {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: flex-start;
+      gap: 2%;
+      flex-wrap: wrap;
+
+      li {
+        width: 30%;
+        display: flex;
+        justify-content: flex-start;
+        gap: 3%;
+        a {
+          width: 100%;
+          display: flex;
+          justify-content: flex-start;
+          gap: 3%;
+        }
+        .teacherMenuImg {
+          width: 42px;
+          height: 42px;
+        }
+        p {
+          font-size: 16px;
+          color: #979797;
+          strong {
+            font-size: 18px;
+            font-weight: 600;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+.teacherContent {
+  width: 100%;
+  padding-bottom: 110px;
+  &.teacherContent01 {
+    background: #53b799
+      url("https://gscdn.hackers.co.kr/history/img/teacher_info/bg_teacher01.jpg")
+      no-repeat top center;
+  }
+  &.teacherContent02 {
+    background: #464646
+      url("https://gscdn.hackers.co.kr/history/img/teacher_info/bg_teacher02.jpg")
+      no-repeat top center;
+  }
+  &.teacherContent03 {
+    .teacherMiniTitle {
+      color: #000;
+    }
+    iframe {
+      display: block;
+      width: 910px;
+      height: 520px;
+      margin: auto;
+    }
+  }
+  &.teacherContent04 {
+    background-color: #fafafa;
+    padding-bottom: 80px;
+    .teacherMiniTitle {
+      color: #000;
+      opacity: 0.5;
+    }
+    .teacherLectTitle {
+      color: #000;
+      font-size: 33px;
+      letter-spacing: -1px;
+      margin-bottom: 36px;
+      text-align: center;
+    }
+  }
+
+  .teacherMiniTitle {
+    padding: 60px 0 30px;
+    color: #fff;
+    opacity: 0.5;
+    text-align: center;
+    p {
+      font-size: 20px;
+      font-weight: 600;
+    }
+    span {
+      font-size: 14px;
+      letter-spacing: 3px;
+      font-weight: 600;
+    }
+  }
+}
