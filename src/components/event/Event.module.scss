@@ -1,0 +1,94 @@
+.inner{width: 1050px;margin: 0 auto;text-align: center;}
+.in_wide{width: 2560px;position: relative;text-align: center;left: 50%;margin-left: -1280px;}
+.evt__wrap{
+    overflow: hidden;
+    img{vertical-align: top; }
+    .title{display: block; color: #fff; position: absolute; left: -1000px; top: 0; height: 1px; width: 1px; overflow: hidden;}
+    .cont01{background: url('https://gscdn.hackers.co.kr/history/img/event/2022/12/0600/pc/type1/v1/main_bg.jpg')no-repeat center top;}
+    .cont03{background: #fdf5f2;}
+    .cont04{background: #f6e4d6 url('//gscdn.hackers.co.kr/history/img/event/2022/12/0600/pc/type1/v1/cont02_bg.jpg')no-repeat center top;}
+    .cont05{background: url('//gscdn.hackers.co.kr/history/img/event/2022/12/0600/pc/type1/v1/cont03_bg.jpg')no-repeat center top;;}
+    .cont06{background: #efd8c3;}
+    .cont07{background: url('//gscdn.hackers.co.kr/history/img/event/2022/12/0600/pc/type1/v1/cont0506_bg.jpg')no-repeat center top;
+            position: relative;
+            iframe{
+                position: absolute; bottom:880px; left:480px; border-radius: 20px;
+            }
+        }
+    .cont08{background: url('//gscdn.hackers.co.kr/history/img/event/2022/12/0600/pc/type1/v1/cont07_bg.jpg')no-repeat center top;}
+    .banner01{background: url('//gscdn.hackers.co.kr/history/img/event/2022/12/0600/pc/type1/v1/banner01.jpg')no-repeat center;height: 234px;}
+    .banner02{background: url('//gscdn.hackers.co.kr/history/img/event/2022/12/0600/pc/type1/v1/banner02.jpg')no-repeat center;height: 234px;}
+    .bot_banner{background: #f9ecdc; position: fixed; bottom: 0; z-index: 50; width: 100%;
+        a{display: block;}
+    }
+}
+.lect__wrap{
+    background: #f6ebe1; padding: 80px 0; 
+    ul{
+        li{margin-top: 40px;position: relative;
+            .check_box{
+                input{position: absolute;
+                    top: 24px;
+                    left: 26px;
+                    z-index: 1;
+                    width: 25px;
+                    height: 25px;}
+                label{display: block;
+                    position: absolute;
+                    top: 101px;
+                    left: 358px;
+                    width: 339px;
+                    height: 73px;
+                }
+                label.active{background-position-y: 99%;}
+            }
+            &:nth-of-type(1) label{background: url('//gscdn.hackers.co.kr/history/img/event/2022/12/0600/pc/type1/v2/chk_btn01.png')no-repeat 0 0;}
+            &:nth-of-type(2) label{background: url('//gscdn.hackers.co.kr/history/img/event/2022/12/0600/pc/type1/v2/chk_btn02.png')no-repeat 0 0;}
+            a{ position: absolute;display: block; font-size: 0; background: none;
+                width: 150px;height: 50px;top: 200px;right: 330px;
+            &:nth-of-type(2){width: 260px;
+                height: 150px;top: 100px;right: 60px;}
+            }
+
+            .lect_info{ position: absolute; bottom: 143px; left: 50px; width:50%;
+                display: flex; justify-content: space-between; align-items: center;
+                li{
+                    &:nth-of-type(1){font-size: 2rem; color: #555; width: 30%;}
+                    &:nth-of-type(2){font-size: 1rem; color: #fff;width: 15%;}
+                    &:nth-of-type(3){font-size: 2.8rem; color: #fc136f; font-weight: 700; width: 45%;}
+                }
+            }
+            &:nth-of-type(2) .lect_info{bottom: 109px;
+                li:nth-of-type(3){color: #6b3eef; }
+            }
+            .book_info{ position: absolute; bottom: 193px; left:54%; transform: translateX(-50%); display: 
+                flex; justify-content:center; width: 69%;
+                li{display: flex; justify-content: center; align-items: center; width: 35%;
+                    &:nth-of-type(1){margin-right: 30%;}
+                    p{width: 30%;
+                        &:nth-of-type(2){font-weight: 700; font-size: 1.25rem; width: 60%;}
+                    }
+                }
+            }
+        }
+    }
+}
+    
+.banner__wrap{
+    background: #221705;
+    position: relative;
+    li{
+        
+        a{ position: absolute;width: 1000px;
+        height: 230px;
+        display: block;
+        top: 200px;
+        left: 50%;transform: translateX(-50%);}
+        &:nth-of-type(2) a{top:470px} 
+        &:nth-of-type(3) a{top:750px} 
+    }
+}
+
+.popup__wrap{
+    li{background: url('//gscdn.hackers.co.kr/history/img/event/2022/12/0600/pc/type1/v1/pop_tab.png') no-repeat 0 0;}
+}
