@@ -18,6 +18,7 @@ export const SlideWrap = styled.div`
   }
   .slick-slide{
     &:nth-of-type(2){background:#2aaf70;}
+    // &:nth-of-type(3){background:#aae259;}
     & > div{
       margin: 0 auto;
       width:1050px;

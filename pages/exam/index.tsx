@@ -3,7 +3,6 @@ import styles from "@components/exam/Exam.module.scss";
 import Image from "next/image";
 import MoviePlayer from "@src/components/players/MoviePlayer";
 import Link from "next/link";
-import TitleItem from "@components/exam/titleItem"
 import SubTitleItem from "@components/exam/subTitleItem"
 import QnaList from "@components/exam/qnaList"
 import AnchorTab from "@src/components/exam/anchorTab"
@@ -33,7 +32,7 @@ function Index() {
               </div>
             </div>
           )}
-          <TitleItem index={0}/>{/* 한능검 소개 */}
+          <h2 className={styles.title}>한능검 정보</h2>
           <div className={styles.banner}>
             <Image src="https://gscdn.hackers.co.kr/history/img/exam_info/img_exam_info.jpg" alt="" width="1050" height="300" />
           </div>

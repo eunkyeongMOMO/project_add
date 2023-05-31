@@ -1,35 +1,36 @@
-import { gql } from 'graphql-tag'
+import { gql } from "graphql-tag";
 
 export type Teacher = {
-  categoryIdx: number
-  categoryName: string
-  teacher: [{
-    categoryIdx: number
-    teacherIdx: number
-    title: string
-    subTitle: string
-    teacherName: string
-    teacherImages: string
-    teacherInfo?: string
-    movieLink?: string
-  }]
-
-}
+  categoryIdx: number;
+  categoryName: string;
+  teacher: [
+    {
+      categoryIdx: number;
+      teacherIdx: number;
+      title: string;
+      subTitle: string;
+      teacherName: string;
+      teacherImages: string;
+      teacherInfo?: string;
+      movieLink?: string;
+    }
+  ];
+};
 
 export type Teachers = {
-  Teachers: Teacher[]
-}
+  Teachers: Teacher[];
+};
 
-
-export const GET_TEACHER = gql`
+export const GET_TEACHERS = gql`
   query {
-    GET_TEACHER{
+    GET_TEACHERS {
       categoryIdx
       categoryName
-      teacher{
+      teacher {
         categoryIdx
         teacherIdx
         title
+        subTitle
         teacherName
         teacherImages
         teacherInfo
@@ -37,9 +38,8 @@ export const GET_TEACHER = gql`
       }
     }
   }
-`
-export default GET_TEACHER
-
+`;
+export default GET_TEACHERS;
 
 /**
   # mutation {

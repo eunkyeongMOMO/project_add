@@ -18,7 +18,7 @@ const SubTitleItem = ({index}:Props) => {
     "자주 묻는 질문"
   ];
     
-  return <h2 className={styles.subTitle}>{inputText[index]}</h2>
+  return <h3 className={styles.subTitle}>{inputText[index]}</h3>
 }
 
 export default SubTitleItem

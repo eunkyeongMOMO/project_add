@@ -1,15 +1,15 @@
 import type { NextPage } from 'next'
 import styles from '@src/scss/Main.module.scss';
 import MainBigBanner from "@src/components/main/bigBanner";
-import BestLecture from "@src/components/main/BestLecture";
-import Teacher from "@src/components/main/Teacher";
+import BestLecture from "@src/components/main/bestLecture";
+import Teacher from "@src/components/main/teacher";
 import Lnb from "@src/components/lnb/Lnb";
-import Review from "@src/components/main/Review";
+import Review from "@src/components/main/review";
 import Image from "next/image";
-import Event from "@src/components/main/Event";
-import FreeContents from "@src/components/main/FreeContents";
-import EventCommunity from "@src/components/main/EventCommunity";
-import Emblem from "@src/components/main/Emblem";
+import Event from "@src/components/main/event";
+import FreeContents from "@src/components/main/freeContents";
+import EventCommunity from "@src/components/main/eventCommunity";
+import Emblem from "@src/components/main/emblem";
 
 const Home: NextPage = () => {
 

@@ -1,3 +1,217 @@
+
+$borderCcc: 1px solid #ccc;
+$greenTxt: #2fa753;
+@mixin table-default{
+  font-size:15px;
+  padding:15px 0;
+  border-bottom: $borderCcc
+}
+.content{
+  padding-bottom: 60px;
+  .inner{
+    width: 1050px;
+    margin: 0 auto;
+    position:relative;
+    .title{
+      font-size: 24px;
+      letter-spacing: -1px;
+      color: #000;
+      margin:50px 19px 25px 0;
+    }
+    .midTitle{
+      font-size: 20px;
+      position:relative;
+      padding-left:13px;
+      margin:0 10px 10px 0;
+      color:#000;
+      display: inline-block;
+      &::before{
+        display: inline-block;
+        content: '';
+        position: absolute;
+        top: 6px;
+        left: 0;
+        width: 3px;
+        height: 18px;
+        background: #000;
+      }
+      span{
+        margin-left:12px;
+        font-size: 15px;
+        color: #727272;
+        letter-spacing: -1px;
+        font-weight:normal;
+        vertical-align: text-top;
+        line-height: 30px;
+      }
+    }
+    .titleTab{
+      width:100%;
+      ul{
+        margin: 20px 0 30px;
+        overflow: hidden;
+        border-bottom: 2px solid #2fa753;
+        li{
+          float: left;
+          min-width: 210px;
+          height: 45px;
+          border: 1px solid #CCC;
+          border-left: 0;
+          border-bottom: 0;
+          &:first-child{
+            border-left: 1px solid #CCC;
+          }
+          &.on{
+            border-color: #2fa753;
+            a{
+              background: #2fa753;
+              color: #fff;
+            }
+          }
+          a{
+            display: block;
+            height: 100%;
+            padding: 0 20px;
+            line-height: 43px;
+            text-align: center;
+            font-size: 17px;
+            color: #979797;
+          }
+        }
+      }
+    }
+    .totalTitle{
+      font-size: 18px;
+      color: #8E8E8E;
+      letter-spacing: -1px;
+      margin: 30px 0;
+      span{
+        color:$greenTxt;
+      }
+    }
+    .subTitle{
+      font-size: 20px;
+      position:relative;
+      padding-left:13px;
+      margin:50px 10px 10px 0;
+      color:#000;
+      display:block;
+      &::before{
+        display: inline-block;
+        content: '';
+        position: absolute;
+        top: 7px;
+        left: 0;
+        width: 3px;
+        height: 20px;
+        background: #00a4d1;
+      }
+      span{
+        font-size:16px;
+        font-weight:normal;
+        margin-left:5px;
+      }
+    }
+    .boxWrap{
+      border: $borderCcc;
+      padding:30px 200px 30px 35px;
+      position: relative;
+      font-size: 16px;
+      line-height: 26px;
+      color: #5E5E5E;
+      margin-bottom:20px;
+      .text{
+        strong{
+          margin-bottom: 5px;
+          font-weight: 600;
+          font-size: 17px;
+          color:$greenTxt;
+        }
+      }
+      .btn{
+        display: inline-block;
+        border-radius: 3px;
+        text-align: center;
+        background: #2fa753;
+        border: 1px solid #2fa753;
+        color: #fff;
+        letter-spacing: -1px;
+        height: 40px;
+        line-height: 38px;
+        font-size: 16px;
+        position: absolute;
+        top: 50%;
+        right: 35px;
+        width: auto;
+        padding: 0 15px 0 25px;
+        margin-top: -20px;
+        span{
+          margin-left:8px;
+        }
+      }
+    }
+    .tabWrap{
+      width:100%;
+      .dep1{
+        display:flex;
+        width:100%;
+        height: 222px;
+        border-top:0;
+        border:$borderCcc;
+        background:#fafafa;
+        margin-bottom: 60px;
+         > li{
+           width:25%;
+          > a{
+            width:100%;
+            text-align: center;
+            font-size: 17px;
+            border:$borderCcc;
+            border-top:0;
+            border-left:0;
+            color: #979797;
+            display: block;
+            height: 45px;
+            line-height: 43px;
+            background: #fff;
+          }
+          &:last-of-type{
+            > a{
+              border-right:0;
+            }
+          }
+          &.on{
+            > a{
+              color: #FFF;
+              background: #2d2d2d;
+              border-color: #2d2d2d;
+            }
+          }
+        }
+        .dep2{
+          margin-top: 16px;
+          font-size: 15px;
+          li{
+            a{
+              display: block;
+              padding: 8px 0;
+              text-align:center;
+            }
+            &.on, &:hover{
+              a{
+                color: #2fa753;
+                font-weight: 600;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
 .inner{width: 1050px;margin: 0 auto;text-align: center;}
 .in_wide{width: 2560px;position: relative;text-align: center;left: 50%;margin-left: -1280px;}
 .evt__wrap{
@@ -90,5 +304,4 @@
 }
 
 .popup__wrap{
-    li{background: url('//gscdn.hackers.co.kr/history/img/event/2022/12/0600/pc/type1/v1/pop_tab.png') no-repeat 0 0;}
-}
+    li{background: url('//gscdn.hackers.co.kr/history/img/event/2022/12/0600/pc/type1/v1/pop_tab.png') no-repeat 0 0;}}

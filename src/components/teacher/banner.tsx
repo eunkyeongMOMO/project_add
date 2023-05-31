@@ -1,3 +1,6 @@
+import { useQuery } from "react-query";
+import { graphqlFetcher, QueryKeys } from "@src/assets/ts/queryClient";
+import { GET_TEACHERS, Teachers, Teacher } from "@src/graphql/teacher";
 import React from "react";
 import Slider, { LazyLoadTypes } from "react-slick";
 import styles from "@src/scss/TeacherBanner.module.scss";
@@ -51,6 +54,11 @@ export const SlideWrap = styled.div`
 `;
 
 function TeacherBanner() {
+  const { data, isLoading, error } = useQuery<
+    any | Teachers | unknown | undefined
+  >(QueryKeys.LECTURES, () => graphqlFetcher(GET_TEACHERS));
+  const LectureListItems = (data?.lectures || []) as Teacher;
+
   const teacherBannerData = [
     {
       src: "https://gscdn.hackers.co.kr/frontend/history/files/banner/f54f8e0dda080ca9197b5f1bfee3d049.jpg",

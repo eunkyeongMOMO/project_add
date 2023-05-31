@@ -1,4 +1,4 @@
-// import React, { useRef } from "react";
+import React from "react";
 import teacherData from "@src/components/teacher/TeacherList.json";
 import styles from "@src/scss/TeacherDetail.module.scss";
 import TeacherDetailBanner from "@src/components/teacher/detail/banner";
@@ -6,13 +6,24 @@ import MoviePlayer from "@src/components/players/MoviePlayer";
 
 type TeacherProps = {
   teacherListIdx: any;
+  scrollProps01: any;
+  scrollProps02: any;
+  scrollProps03: any;
 };
-export default function TeacherIntroduce({ teacherListIdx }: TeacherProps) {
+function TeacherIntroduce({
+  teacherListIdx,
+  scrollProps01,
+  scrollProps02,
+  scrollProps03,
+}: TeacherProps) {
   const teacherBg = teacherData[teacherListIdx].teacherDetailIntroduceBg;
   return (
     <>
       {/* 선생님 단 */}
-      <div className={`${styles.teacherContent} ${styles.teacherContent01}`}>
+      <div
+        ref={scrollProps02}
+        className={`${styles.teacherContent} ${styles.teacherContent01}`}
+      >
         <div className={styles.teacherDetailInner}>
           <div className={styles.teacherMiniTitle}>
             <p>{teacherData[teacherListIdx].teacherName} 선생님</p>
@@ -33,6 +44,7 @@ export default function TeacherIntroduce({ teacherListIdx }: TeacherProps) {
       </div>
 
       <div
+        ref={scrollProps03}
         className={`${styles.teacherContent} ${styles.teacherContent03}`}
         style={{ background: `#fff url('${teacherBg}') no-repeat top left` }}
       >
@@ -47,7 +59,10 @@ export default function TeacherIntroduce({ teacherListIdx }: TeacherProps) {
         </div>
       </div>
 
-      <div className={`${styles.teacherContent} ${styles.teacherContent04}`}>
+      <div
+        ref={scrollProps01}
+        className={`${styles.teacherContent} ${styles.teacherContent04}`}
+      >
         <div className={styles.teacherDetailInner}>
           <div className={styles.teacherMiniTitle}>
             <p>{teacherData[teacherListIdx].teacherName} 선생님</p>
@@ -65,3 +80,5 @@ export default function TeacherIntroduce({ teacherListIdx }: TeacherProps) {
     </>
   );
 }
+
+export default React.memo(TeacherIntroduce);

@@ -40,7 +40,7 @@ import Link from "next/link";
 //         ]    
 //     },
 // ]
-function CusCtrTop({}) {
+function CusCtrTop() {
     const [currentTab, setCurrentTab] = useState<string>('cs');
     const [currentLink, setCurrentLink] = useState<number>(0);
     const cTab = (tab: string) => {

@@ -1,4 +1,8 @@
-import React, { useEffect, useState } from "react";
+import { useQuery } from "react-query";
+import { graphqlFetcher, QueryKeys } from "@src/assets/ts/queryClient";
+import { GET_TEACHERS, Teachers } from "@src/graphql/teacher";
+
+import React, { useEffect, useState, useRef } from "react";
 import { GetServerSideProps } from "next";
 import styles from "@src/scss/TeacherDetail.module.scss";
 import TeacherBestLect from "@src/components/teacher/detail/bestLect";
@@ -6,6 +10,7 @@ import TeacherProfile from "@src/components/teacher/detail/profile";
 import TeacherMenuTab01 from "@src/components/teacher/detail/menuTab01";
 import TeacherMenuTab02 from "@src/components/teacher/detail/menuTab02";
 import Image from "next/image";
+import Link from "next/link";
 import teacherData from "@src/components/teacher/TeacherList.json";
 import TeacherIntroduce from "@src/components/teacher/detail/introduce";
 
@@ -19,13 +24,17 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
 };
 
 function Index({ query }: any) {
+  const { data, isLoading, error } = useQuery<
+    any | Teachers | unknown | undefined
+  >(QueryKeys.TEACHERS, () => graphqlFetcher(GET_TEACHERS));
+
   const teacherListIdx = query.idx - 1;
 
   const teacherMainImg = teacherData[teacherListIdx].teacherDetailMainImg;
 
   const menuList = {
-    0: <TeacherBestLect teacherListIdx={teacherListIdx} />,
-    1: <TeacherProfile teacherListIdx={teacherListIdx} />,
+    0: <TeacherBestLect teacherListIdx={teacherListIdx} />, // 대표강의 보기
+    1: <TeacherProfile teacherListIdx={teacherListIdx} />, // 선생님 프로필
   } as any;
   const [tabIndex, setTabIndex] = useState(0);
 
@@ -69,6 +78,13 @@ function Index({ query }: any) {
       window.removeEventListener("scroll", handleScroll);
     }; //  window 에서 스크롤을 감시를 종료
   });
+
+  const scrollToRef = useRef<HTMLDivElement>(null);
+  const moveToClick = () => {
+    scrollToRef.current?.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
 
   return (
     <>
@@ -118,6 +134,77 @@ function Index({ query }: any) {
             {menuList[tabIndex]}
           </div>
         </div>
+
+        <div className={styles.teacherBoardArea}>
+          <div className={styles.teacherBoarBox}>
+            <h3 className={styles.boardTitle}>BEST 강의</h3>
+            <ul>
+              <li>
+                <Link
+                  href="https://history.hackers.com/?r=history&c=lecture/detail&productIdx=6290"
+                  target="_blank"
+                >
+                  해커스 한국사능력검정시험 2주 합격 심화 (개정 6판)
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://history.hackers.com/?r=history&c=lecture/detail&productIdx=4063"
+                  target="_blank"
+                >
+                  [5일 완성] 김승범의 빠르게 합격하는 한국사 심화 (1·2·3급) -
+                  3판
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://history.hackers.com/?r=history&c=lecture/detail&productIdx=6251"
+                  target="_blank"
+                >
+                  [교재포함] 2023년 한국사능력검정 심화 2주합격 풀패스 (미사용)
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          <div className={styles.teacherBoarBox}>
+            <h3 className={styles.boardTitle}>
+              주요 이벤트 소식
+              <Link
+                className={styles.moreIcon}
+                href="https://history.hackers.com/?r=history&c=cs/benefit/events"
+                target="_blank"
+              ></Link>
+            </h3>
+            <ul>
+              <li>
+                <Link
+                  href="https://history.hackers.com/?r=history&c=event&evt_id=20080300"
+                  target="_blank"
+                >
+                  1위 해커스한국사 | 한능검 2주단기합격 최신인강 6종 0원!
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://history.hackers.com/?r=history&c=event&evt_id=20080302"
+                  target="_blank"
+                >
+                  1위 해커스한국사 | 65회 한능검 정답채점&라이브해설 풀서비스
+                  3판
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://history.hackers.com/?r=history&c=event&evt_id=20102900"
+                  target="_blank"
+                >
+                  1위 해커스한국사 | 기출풀이+자동채점+합격예측 모의고사 0원!
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
 
       <div
@@ -144,13 +231,19 @@ function Index({ query }: any) {
 
           <ul className={styles.navRightArea}>
             <li>
-              <button type="button">강의 수강신청</button>
+              <button type="button" onClick={moveToClick}>
+                강의 수강신청
+              </button>
             </li>
             <li>
-              <button type="button">선생님 소개</button>
+              <button type="button" onClick={moveToClick}>
+                선생님 소개
+              </button>
             </li>
             <li>
-              <button type="button">대표강의 맛보기</button>
+              <button type="button" onClick={moveToClick}>
+                대표강의 맛보기
+              </button>
             </li>
           </ul>
         </div>
@@ -184,7 +277,12 @@ function Index({ query }: any) {
         </div>
       </div>
 
-      <TeacherIntroduce teacherListIdx={teacherListIdx} />
+      <TeacherIntroduce
+        teacherListIdx={teacherListIdx}
+        scrollProps01={scrollToRef}
+        scrollProps02={scrollToRef}
+        scrollProps03={scrollToRef}
+      />
     </>
   );
 }

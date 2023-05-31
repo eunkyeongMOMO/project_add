@@ -49,7 +49,7 @@ const PrevArrow = (props: Props) => {
   return <button className={styles.prevArrow} onClick={onClick} />;
 };
 
-export default function SlickSlider() {
+export default function Banner() {
   const settings = {
     customPaging: function (i: any) {
       return <button type="button">{imgData[i].imgArt} ☞</button>;
