@@ -85,6 +85,7 @@ const Lect = ({imgUrl}) =>{
     let finalPrice = ['109,000원', '79,000원','17,010원','16,110원'];
     let [input01, setInput01] =useState<boolean>(false);
     let [input02, setInput02] =useState<boolean>(false);
+
         return(
         <div className={`${evtStyle.lect__wrap}`}>
             <ul className={`${evtStyle.inner}`}>
@@ -98,7 +99,7 @@ const Lect = ({imgUrl}) =>{
                     <ul className={`${evtStyle.lect_info}`}>
                         <li>{price[0]}</li>
                         <li>{sale[0]}</li>
-                        <li>{finalPrice[0]}</li>
+                        <li>{input01=== true ?'128,800' : '109,000'}</li>
                     </ul>
                     <Link href="/">해택보기</Link>
                     <Link href="/">신청하기</Link>
@@ -113,8 +114,10 @@ const Lect = ({imgUrl}) =>{
                     <ul className={`${evtStyle.lect_info}`}>
                         <li>{price[1]}</li>
                         <li>{sale[1]}</li>
-                        <li>{finalPrice[1]}</li>
+                        <li>{input02 === true ?'96,100':'79,000'}</li>
                     </ul>
+                    <Link href="/">해택보기</Link>
+                    <Link href="/">신청하기</Link>
                 </li>
                 <li>
                     <img src={`${imgUrl}type1/v1/cta_btm.jpg`} alt="" />
@@ -138,8 +141,8 @@ const Popup=({imgUrl})=>{
     return(
         <div className={`${evtStyle.popup__wrap}`}>
             <ul className={`${evtStyle.tabBtn}`}>
-                <li></li>
-                <li></li>
+                <li>심화합격패스</li>
+                <li>기본합격패스</li>
             </ul>
             <div className="tab_cont01">
                 <img src={`${imgUrl}type1/v1/pop_hard.png`} alt="" />
