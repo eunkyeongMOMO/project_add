@@ -1,0 +1,673 @@
+// .myinfoTopInner{
+// 	width:1050px;
+// 	margin:0 auto;
+// 	overflow:hidden;
+// 	.myinfoTopName{
+// 		float:left;
+// 		width:40%;
+// 	}
+// }
+
+// .myinfoTopMember{
+//   height: 48px;
+//   padding-left: 65px;
+//   background: url('https://img.hackers.com/user/images/myinFo/myinFo_member.png');
+//   display:inline-block;
+//   margin-bottom:24px;
+// }
+
+// .myinfoTopCoupon{
+//   float:right;
+//   margin-right:54px;
+//   overflow:hidden;
+//   li{
+//     cursor:pointer;
+//     float:left;
+//     width:200px;
+//     position:relative;
+//     border-left:1px solid #fff;
+
+//     &:first-child{
+//       border-left:none;
+//       border-right:1px solid #cdcdcd;
+//       width:280px;
+//     }
+//     a{
+//       display:block;
+//       &.myinfoTopMemberIcon2{
+//         margin-right:50px;
+//       }
+//       &.myinfoTopMemberIcon1{
+//         margin-left:50px;
+//       }
+//     }
+
+//     span{
+//       text-align:right;
+//       display:block;
+//       font-size:18px;
+//       color:#000;
+//       margin-bottom:12px;
+//       em{
+//         color:$pointColor;
+//         font-weight:bold;
+//         font-size:22px;
+//         margin-right:6px;
+//         &:hover{
+//           border-bottom:2px solid $pointColor;
+//         }
+//       }
+//     }
+//     i{
+//       text-align:right;
+//       display:block;
+//       font-size:12px;
+//       color:#000;
+//     }
+//   }
+// }
+
+// .myinfoTopList{
+//   overflow:hidden;
+//   li{
+//     float:left;
+//     width:16.5%;
+//     text-align:center;
+//     a{
+//       display:inline-block;
+//       width:60%;
+//       font-size:16px;
+//       font-weight:bold;
+//       color:#919fa4;
+//       letter-spacing:-1px;
+//       height:40px;
+//       line-height:40px;
+//     }
+//     &.on a{
+//       color:#000;
+//       border-bottom:4px solid #000;
+//     }
+//   }
+// }
+.myinfoTc{
+  margin:60px auto 55px;
+  text-align:center;
+  .createBtn{
+    position:relative;
+    display:inline-block;
+    background-color:#0186b2;
+    color:#fff;
+    font-size:14px;
+    letter-spacing:-1px;
+    font-weight:bold;
+    height:32px;
+    line-height:30px;
+    width:160px;
+    text-align:center;
+    border-radius:20px 20px;
+    vertical-align:middle;
+    margin: 20px auto;
+  }
+}
+
+.myinfoTitleIcon{
+  // [class^='myinfoTitle']
+  font-weight: bold;
+  font-size: 30px;
+  color: #0f0f0f;
+  height: 40px;
+  letter-spacing:-1px;
+  padding-left: 65px;
+  background: url('https://img.hackers.com/user/images/myinFo/myinFoPage_icon.png') no-repeat;
+  display:inline-block;
+  margin-bottom:24px;
+  &.ver6 {
+    background-position: 0 -200px;
+  }
+}
+
+.myinfoSubTitle{
+	text-align:center;
+	font-size:16px;
+	color:#292929;
+}
+
+// .detailsText{
+//   margin-top:10px;
+//   li{
+//     float:left;
+//     padding:0 18px;
+//     height:16px;
+//     line-height:12px;
+//     border-left:1px solid #c3c3c3;
+//     font-size:15px;
+//     color:#696969;
+//     em{
+//       color:#000;
+//       font-weight:bold;
+//       &.text-blue{
+//         color:#2a95b8;
+//       }
+//     }
+//     &:first-child{
+//       border-left:none;
+//     }
+//   }
+// }
+
+// .myinfoDetails{
+//   border-bottom:2px solid #000;
+//   margin-bottom:50px;
+
+//   p{
+//     font-size:15px;
+//     font-weight:bold;
+//     color:#000;
+//     margin-bottom:17px;
+//     em{
+//       color:#2a95b8;
+//     }
+//   }
+//   &:after{
+//     clear:both;
+//     display:block;
+//     content:"";
+//   }
+// }
+// .myinfoDetailsSub{
+//   font-size:20px;
+//   color:#000;
+//   padding-bottom:16px;
+//   border-bottom:1px solid #000;
+// }
+
+// .myinfoTableSub{
+//   text-overflow:ellipsis;
+//   overflow:hidden;
+//   white-space:nowrap;
+//   width:98%;
+// }
+
+// .totalAmount{
+//   font-size:26px !important;
+//   color:#ff0000 !important;
+// }
+// .refundTable{
+//   table{
+//     border-bottom:1px solid #d8d8d8;
+//   }
+//   th{
+//     background-color:#fff !important;
+//     border-bottom:none !important;
+//   }
+//   td{
+//     border-bottom:none !important;
+//     span{
+//       font-size:18px;
+//       font-weight:bold;
+//       color:#ff0000;
+//     }
+//     em{
+//       font-size:16px;
+//       font-weight:bold;
+//       color:#0186b2;
+//     }
+//   }
+//   .darkFont{
+//     color:#000 !important;
+//   }
+// }
+// .refundWrite,
+// .refundTable{
+//   position:relative;
+// }
+// .myinfoTableMon{
+// 	padding-right:74px !important;
+// 	text-align:right !important;
+// 	&.p-r46{
+// 		padding-right:46px !important;
+// 	}
+// 	strong{
+// 		font-size:17px !important;
+// 	}
+// }
+// .callNoticeW{
+//   background-color:#ebfaff;
+//   padding:25px 32px 25px;
+//   position:relative;
+//   h4{
+//     padding:0 0 15px 0 !important;
+//   }
+//   ul{
+//     margin-left:0 !important;
+//     li{
+//       background:none;
+//       padding-left:0;
+//       letter-spacing:-1px;
+//     }
+//   }
+//   .couponBtn{
+//     width:174px;
+//     position:absolute;
+//     top:40px;
+//     right:25px;
+//   }
+// }
+.bgBlue{
+  background-color:#ebfaff;
+  padding:46px 32px 46px;
+  margin-top:0 !important;
+
+  .subTitle{
+    font-size:17px;
+    font-weight:bold;
+    color:#6f6f6f;
+  }
+}
+// .refundNoticeC{
+//   padding:0 34px;
+//   ol{
+//     margin-left:24px !important;
+//     letter-spacing:-1px !important;
+//     margin-bottom:100px;
+//   }
+//   p{
+//     font-size:14px;
+//     margin-bottom:22px;
+//   }
+// }
+
+/* tab */
+.tabArea {
+	overflow: hidden;
+  .tab{
+    border-bottom: 2px solid #3bb2d9;
+    margin-bottom: 15px;
+    button {
+      display: block;
+      width: 50%;
+      text-align: center;
+      border-left: 2px solid #fff;
+      font-size: 14px;
+      height: 44px;
+      line-height: 44px;
+      font-weight: bold;
+      color: #b8b8b8;
+      background: #f4f4f4;
+      &.active {
+        color: #fff;
+        background: #3bb2d9;
+      }
+    }
+    &:first-child button {
+      border-left: 0;
+    }
+  }
+  .tabcon{
+    .searchNumber{
+      font-size: 15px;
+      em{
+        font-size: 20px;
+        font-weight: 600;
+        color: #0186b2;
+      }
+    }
+  }
+}
+
+.payment {
+	border-top: 2px solid #000;
+	.bor-l{
+		border-left:none !important;
+	}
+	.border-left{
+		border-left:1px solid #ccc !important;
+	}
+	.pop-bg td{
+		background-color:#fafafa;
+	}
+	p{
+		font-weight:bold;
+		span{
+			font-weight:normal;
+			margin:0 2px;
+		}
+	}
+	.input-sp-s{
+		/* height:40px !important; */
+		span{
+			font-size:14px !important;
+			line-height:18px !important;
+			color:#000;
+		}
+	}
+
+	thead th {
+		letter-spacing: -1px;
+		font-weight: bold;
+		font-size: 15px;
+		color: #7b7b7b;
+		padding: 13px 0 16px;
+		border-bottom: 1px solid #1b1b1b;
+		em{
+			font-size:12px;
+		}
+		&.title-bg{
+			background-color:#f4f4f4;
+			border-left:none;
+			border-right:none;
+		}
+	}
+	tbody {
+		td {
+			letter-spacing: -1px;
+			border-bottom: 1px solid #e5e5e5;
+			text-align: center;
+			padding: 26px 5px;
+			font-size: 15px;
+			color: #707070;
+			&.tit {
+				font-weight: bold;
+				color: #1b1b1b;
+				font-size: 16px;
+			}
+			&.amount {
+				span {
+					font-weight: bold;
+					font-size: 22px;
+					color: #1b1b1b;
+				}
+				font-weight: bold;
+				font-size: 22px;
+				color: #1b1b1b;
+			}
+			&.sale {
+				text-align: right;
+			}
+			[class|='s-btn'] {
+				width: 90px;
+				padding: 0;
+			}
+			[class|='s-btn-line'] {
+				width: 88px;
+			}
+		}
+		tr.bg td {
+			background: #f5f5f5;
+		}
+		.toggle-order{
+			background:#f5f5f5;
+			td{
+				padding:0;
+				table{
+					tr{
+						td{
+							&:nth-child(2){padding:10px 30px;}
+						}
+					}
+					tbody{
+						tr{
+							border-bottom:1px solid #fff;
+							&.address{
+								background:#e0e0e0;
+								td{
+									padding:10px 30px;
+									color:#000;
+									&:before{
+										content:none;
+									}
+									strong{
+										display:inline;
+									}
+								}
+							}
+							&:last-child{
+								border-bottom:0;
+							}
+							td{
+								padding:8px 0;
+								border-bottom:0;
+								line-height:1.6;
+								&:first-child{
+									position:relative;
+									&:before{
+										content:'';
+										position:absolute;
+										top:10%;
+										right:0;
+										width:1px;
+										height:80%;
+										background:#d3d3d3;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+	}
+	&.total {
+		th {
+			background: #e7f9ff;
+		}
+		td {
+			font-weight: bold;
+			font-size: 20px;
+			color: #000;
+			span {
+				font-weight: bold;
+				font-size: 20px;
+				color: #000;
+			}
+			.tip {
+				font-size: 12px;
+				color: #5e6d72;
+			}
+			&.total-amount, span.total-amount {
+				font-size: 27px;
+				color: #ff0000;
+			}
+		}
+		background-color:#f8fdff;
+	}
+	&.finish {
+		th {
+			color: #1b1b1b;
+			border-left: 1px solid #ccc;
+		}
+		td {
+			border-left: 1px solid #ccc;
+			&.product {
+				color: #000;
+				text-align: left;
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+		}
+		th:first-child {
+			border-left: 0;
+		}
+		td {
+			&:first-child {
+				border-left: 0;
+			}
+			padding: 17px 5px 19px;
+		}
+		tfoot td {
+			border-bottom: 1px solid #000;
+			text-align: center;
+			background: #edfaff;
+			padding: 19px 5px;
+			font-size: 15px;
+			color: #707070;
+			&.tit {
+				color: #000;
+				font-weight: bold;
+			}
+		}
+	}
+	.input-chk {
+		margin: 0 auto;
+	}
+
+	.btn-m-blue,
+	.btn-m-line,
+	.btn-m-dark{
+		font-size:14px;
+		width:90px !important;
+		height:28px !important;
+		line-height:26px !important;
+		padding:0 !important;
+	}
+	.btn-m-dark{
+		margin-bottom:4px;
+	}
+	.btn-m-line-gray{
+		width:60px !important;
+		height:28px !important;
+		line-height:26px !important;
+		padding:0 !important;
+	}
+	.tit-td{
+		font-weight: bold;
+		color: #1b1b1b;
+	}
+	.tit-td{
+		a.on{
+			text-decoration:underline;
+			&:hover{
+				color:#0186b2;
+				text-decoration:underline;
+			}
+		}
+	}
+	.f-point{
+		color:#2a95b8 !important;
+		text-decoration:underline;
+	}
+	strong{
+		/*color:#000;*/
+		font-size:15px;
+		font-weight:bold;
+		display:block;
+	}
+	.table-text{
+		margin-bottom:8px;
+		display:block;
+	}
+	.pament-end{
+		font-weight:bold;
+		color:#000;
+	}
+	em{
+		display:block;
+	}
+	.my-order-tit{
+		cursor:pointer;
+	}
+	&.bt0{
+		border-top:0;
+	}
+}
+
+.pagingWrap{
+	text-align:center;
+	margin:40px 0 100px;
+	.pagingList{
+		overflow:hidden;
+		display:inline-block;
+		vertical-align:middle;
+		li{
+			float:left;
+			width:25px;
+			margin:0 2px;
+			&.active{
+				border:1px solid #2a95b8;
+				a{
+					color:#2a95b8;
+					font-weight:bold;
+				}
+			}
+			a{
+				display:block;
+				font-size:16px;
+				color:#707070;
+				text-align:center;
+				height:23px;
+				line-height:21px;
+			}
+		}
+	}
+}
+
+.pagingIcon{
+	height:10px;
+	padding-left:16px;
+	background: url("https://img.hackers.com/user/images/com_img/paging_btn.png") no-repeat;
+	display:inline-block;
+	&.pagingIcon1{background-position: 0 0;}
+	&.pagingIcon2{background-position: 4px -20px;}
+	&.pagingIcon3{background-position: 4px -40px;}
+	&.pagingIcon4{background-position: 0 -60px;}
+}
+
+
+// 문의하기 입력 폼
+.tbList {
+	border-top: 1px solid #d8d8d8;
+	tbody {
+		th, td {
+			text-align: left;
+			font-size: 14px;
+			padding: 15px 15px 14px 15px;
+			color: #696969;
+			border-bottom: 1px solid #d8d8d8;
+		}
+		th {
+			background: #f4f4f4;
+			color: #232323;
+			font-weight: bold;
+			vertical-align: top;
+			em{
+				font-weight:normal;
+			}
+		}
+		tr.bg {
+			th {
+				background: #e7f9ff;
+			}
+			td {
+				background: #f8fdff;
+				position:relative;
+			}
+		}
+	}
+	select,input[type=text],textarea{
+		padding:4px;
+	}
+	input[type=text], textarea{
+		width:100%;
+		border:1px solid #ddd;
+	}
+	textarea{
+		min-height:200px;
+	}
+}
+.writeBtnArea{
+	margin: 50px auto;
+	width: 25%;
+	display: flex;
+	justify-content: space-between;
+
+	button{
+		width: 49%;
+		padding: 3px;
+		border-radius: 5px;
+		color: #fff;
+		&:nth-of-type(1){ background: #d9d9d9;}
+		&:nth-of-type(2){ background: #3bb2d9;}
+
+	}
+}

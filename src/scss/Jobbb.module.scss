@@ -1,0 +1,154 @@
+.flexRow {
+  display: flex;
+  flex-flow: row;
+}
+.flexCol {
+  display: flex;
+  flex-flow: column;
+}
+.flexRow.sb {
+  justify-content: space-between;
+  align-items: center;
+}
+.flexRow.ct {
+  align-items: center;
+}
+.flexRow.alignStart {
+  align-items: flex-start;
+}
+.flexRow.alignEnd {
+  align-items: flex-end;
+}
+.flexRow.justifyEnd {
+  justify-content: flex-end;
+}
+
+
+
+
+// ----------------------------
+
+.contentWrap{
+  position: relative;
+  width: 600px;
+}
+.header{
+  margin-bottom: 45px;
+  .topMenu{
+    width: 413px;
+    height: 40px;
+    background: url(https://job.hackers.com/A_offline/tool/images/top_menu_bg.gif) no-repeat;
+    justify-content: space-evenly;
+  }
+}
+
+.grayLinear{
+  margin-bottom: 10px;
+  width: 600px;
+  border: 5px solid #e5e5e5;
+  border-radius: 5px;
+}
+
+// 글자수 세기
+.textCount{
+  textarea{
+    width: 100%;
+    height: 320px;
+    background: #fff;
+    // border: 5px solid #e5e5e5;
+    // border-radius: 5px;
+    box-sizing: border-box;
+  }
+  .noticeArea{
+    background: #e5e5e5;
+    .notice{
+      font-size: 11px;
+    }
+    .btnArea{
+      margin-right: 10px;
+    }
+  }
+}
+
+.total {
+  position: absolute;
+  bottom: -25px;
+  right: 40px;
+  font-size: 14px;
+  color: #000;
+}
+
+// 학점변환, 어학변환
+.gradeChange{
+  margin-bottom: 30px;
+  font-size: 12px;
+  font-weight: 600;
+  .grayLinear{
+    margin:0 auto;
+    width: 100%;
+    padding:30px 118px;
+  }
+  .gradeInputArea{
+    margin-bottom: 15px;
+    padding:10px;
+    background: url('https://job.hackers.com/A_offline/tool/images/converse_bg.gif') no-repeat;
+    background-size: cover;
+    input{
+      width: 80px;
+      border: 1px solid #ddd;
+      background: #fff;
+    }
+    button img{
+      vertical-align: middle;
+    }
+  }
+  table{
+    border:1px solid #ddd;
+    td{
+      border:1px solid #ddd;
+      &:nth-of-type(even){
+        background: #f8f8f8;
+      }
+    }
+  }
+  .notice{
+    margin-top: 25px;
+    font-size: 11px;
+    font-weight: 500;
+    color: #f9951b;
+  }
+}
+
+// 어학변환
+.gradeChange.linguisticsChange{
+  table{
+    td{
+      padding: 1.5% 0;
+      &:nth-of-type(odd){
+        width: 40%;
+        background: #f8f8f8;
+      }
+      &:nth-of-type(even){
+        width: 60%;
+        background: #fff;
+        color: #993300;
+      }
+    }
+  }
+}
+
+// 사진수정
+.photoModify{
+  .borderBox{
+    border: 1px solid #dedede;
+  }
+}
+
+
+
+
+
+
+
+
+

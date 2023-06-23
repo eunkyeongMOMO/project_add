@@ -1,0 +1,130 @@
+.inner {
+  margin: 0 auto;
+  width: 1050px;
+}
+
+.searchWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+
+  .bookTotal {
+    font-size: 18px;
+    color: #828282;
+
+    span {
+      color: #f88b41;
+    }
+  }
+
+  select {
+    padding: 0 5px;
+    height: 32px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #010101;
+    width: 220px;
+    margin-left: 5px;
+  }
+}
+
+.bookList {
+  margin-bottom: 50px;
+
+  li {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 50px 0;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .bookImg {
+    display: inline-block;
+    margin-right: 30px;
+  }
+
+  .textBox {
+    display: inline-block;
+    width: 52%;
+
+    .title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .info {
+      display: flex;
+      align-items: center;
+    }
+    .info span {
+      position: relative;
+      display: inline-block;
+      padding-right: 10px;
+      margin-right: 10px;
+      font-size: 15px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+    .info span::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      display: block;
+      width: 1px;
+      height: 10px;
+      background: #333;
+    }
+    .info span:nth-last-child(1)::after {
+      content: "";
+      display: none;
+    }
+    .summary {
+      font-size: 14px;
+      color: #979797;
+    }
+  }
+
+  .priceWrap {
+    margin-right: 40px;
+    .beforePrice {
+      font-size: 16px;
+      color: #979797;
+      text-decoration: line-through;
+      text-align: right;
+    }
+    .afterPrice {
+      text-align: right;
+      font-size: 26px;
+      color: #e6003a;
+      font-weight: bold;
+    }
+    .discountPrice {
+      text-align: right;
+      font-size: 16px;
+      color: #e6003a;
+    }
+  }
+
+  .btnBox {
+    button {
+      display: block;
+      font-size: 16px;
+      background: #2fa753;
+      color: #fff;
+      width: 145px;
+      height: 40px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    button:nth-last-child(1) {
+      background: #fff;
+      color: #2fa753;
+      box-sizing: border-box;
+      border: 1px solid #2fa753;
+    }
+  }
+}

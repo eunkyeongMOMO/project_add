@@ -1,0 +1,115 @@
+.bookDownloadArea {
+  width: 100%;
+  * {
+    box-sizing: border-box;
+  }
+}
+// 검색
+.searchArea {
+  width: 100%;
+  padding: 30px 0;
+  display: flex;
+  justify-content: flex-end;
+
+  input {
+    display: block;
+    width: 300px;
+    height: 40px;
+    border-radius: 4px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    text-indent: 10px;
+  }
+
+  button {
+    display: block;
+    width: 80px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #222;
+    color: #fff;
+    font-size: 16px;
+  }
+}
+
+// 자료 리스트
+.bookListWrap {
+  width: 100%;
+  li {
+    width: 100%;
+    padding: 40px 20px;
+    border-bottom: 1px solid #ccc;
+
+    .boxArea {
+      display: inline-block;
+      vertical-align: middle;
+      padding: 15px;
+
+      &.imgBox {
+        width: 150px;
+        padding: 0;
+      }
+
+      &.txtBox {
+        width: 450px;
+        p {
+          font-size: 20px;
+          color: #000;
+          line-height: 1.5;
+          font-weight: 600;
+
+          .tagName {
+            margin-left: 5px;
+            padding: 2px 10px;
+            background: #000;
+            color: #fff;
+            text-align: center;
+            font-size: 14px;
+          }
+        }
+      }
+
+      &.fileNameBox {
+        border-left: 1px solid #ebebeb;
+        width: 250px;
+        p {
+          font-size: 15px;
+          color: #a6aaa9;
+          margin-bottom: 10px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      &.btnBox {
+        width: 160px;
+
+        .btnDownload {
+          width: 100%;
+          padding: 2px 5px;
+          border: 1px solid #2fa753;
+          color: #2fa753;
+          border-radius: 4px;
+          margin-bottom: 10px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          .iconDownload {
+            display: inline-block;
+            vertical-align: middle;
+            width: 20px;
+            height: 20px;
+            margin-left: 3px;
+            background: #fff
+              url("http://gscdn.hackers.co.kr/history/img/common/sp_ico.png")
+              no-repeat -65px -70px;
+          }
+        }
+      }
+    }
+  }
+}
